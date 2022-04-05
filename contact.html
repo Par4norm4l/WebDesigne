@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>WebDesign</title>
+    <style>
+        .left-side {
+            height: 619px;
+            background: #1f13f7b0;
+            border-radius: 35px;
+            margin-left: -17px;
+        }
+        
+        .inner {
+            position: absolute;
+            margin-left: 283px;
+            margin-top: 369px;
+            width: 250px;
+            height: 250px;
+            background-color: rgb(238, 135, 152);
+            border-top-left-radius: 100%;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 35px;
+            border-bottom-left-radius: 0;
+        }
+        
+        .circle {
+            z-index: 1;
+            position: absolute;
+            margin-left: 280px;
+            margin-top: 350px;
+            width: 170px;
+            height: 170px;
+            background: #857effb0;
+            border-radius: 50%
+        }
+        
+        img {
+            position: absolute;
+            width: 30px;
+        }
+        
+        .img-1 {
+            margin-top: 200px;
+            margin-left: -200px;
+        }
+        
+        .img-2 {
+            margin-top: 260px;
+            margin-left: -200px;
+        }
+        
+        .img-3 {
+            margin-top: 320px;
+            margin-left: -200px;
+        }
+        
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: #6b63ffb0;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .container {
+            margin-top: 15px;
+            padding: 20px;
+        }
+        
+        span {
+            color: #ff574e;
+            padding-left: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-container">
+        <nav class="navigation">
+            <div class="logo">
+                <h1><span style="color:#6b63ffb0;">Web</span><span style="color:#6C63FF;">Design</span></h1>
+            </div>
+            <ul class="nav-items">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="information.html">information</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <div class="sign-in">
+                    <a href="signin.html" style="font-size: 14px;">Sign In</a>
+                </div>
+            </ul>
+
+        </nav>
+        <section class="section-main" style="margin-left:20px;">
+            <div class="left-side" style="width: 40%; ">
+                <div>
+                    <h1 style="position:absolute; margin-top: 30px; margin-left:30px; color:white;">Contact Information</h1>
+                    <p style="position:absolute; margin-left:30px; margin-top: 80px; width: 420px; color: rgb(177, 173, 173)">Fill up the form and our Team will get back to you within 24 hours.</p>
+                    <img src="/img/phone.png" class="img-1">
+                    <p style="position:absolute; margin-top: 205px; margin-left: 100px; color:white; font-size:15px;">+0123 4567 8910</p>
+                    <img src="/img/email.png" class="img-2">
+                    <p style="position:absolute; margin-top: 265px; margin-left: 100px; color:white; font-size:15px;">hello@gmail.com</p>
+                    <img src="/img/location.png" class="img-3">
+                    <p style="position:absolute; margin-top: 325px; margin-left: 100px; color:white; font-size:15px;">102 Street 2714 Don </p>
+
+                    <img src="/img/fb.png" style="position:absolute; margin-top:550px; margin-left: -180px;">
+                    <img src="/img/twitter.png" style="position:absolute; margin-top:550px; margin-left: -120px;">
+                    <img src="img/instagram.png" style="position:absolute; margin-top:550px; margin-left: -60px;">
+                </div>
+                <div class="circle"></div>
+                <div class="inner"></div>
+                <div class="right-side" style="width: 60%">
+
+                    <div class="container" style="position: absolute; margin-left: 550px; font-family: Arial, Helvetica, sans-serif;
+                    width: 45%;">
+                        <form>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+                            <label for="email">Email<span>*</span></label>
+                            <input type="text" id="email" name="email" placeholder="Email">
+                            </select>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Type your message here" style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
